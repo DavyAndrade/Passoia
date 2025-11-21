@@ -1,15 +1,36 @@
 .navbar {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
   background-color: var(--bg-primary);
-  height: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
-  .navbar__logo {
-    height: 100%;
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 1.5rem;
+
+    .navbar__logo {
+      height: 100%;
+    }
   }
 
-  .navbar__menu {
+  .navbar__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .navbar__desktop {
+    display: none;
   }
 }

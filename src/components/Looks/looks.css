@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   width: 100%;
-  padding: 4rem 1rem;
+  padding-inline: 1rem;
   gap: 2rem;
 }
 .looks .looks__title {
@@ -27,7 +26,29 @@
 }
 .looks .looks__items .looks__item .looks__item__image {
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
   height: 100%;
-} /*# sourceMappingURL=looks.css.map */
+}
+
+/* Tablets */
+@media screen and (min-width: 48rem) {
+  .looks {
+    padding-inline: 1.5rem;
+  }
+  .looks .looks__items {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/* Notebooks */
+@media screen and (min-width: 64rem) {
+  .looks {
+    padding-inline: 2rem;
+    max-width: 64rem;
+  }
+}
+/* Desktops */
+@media screen and (min-width: 80rem) {
+  .looks {
+    padding-inline: 2rem;
+    max-width: 80rem;
+  }
+}/*# sourceMappingURL=looks.css.map */
