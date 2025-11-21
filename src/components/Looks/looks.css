@@ -1,0 +1,33 @@
+.looks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem 1rem;
+  gap: 2rem;
+}
+.looks .looks__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.looks .looks__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+.looks .looks__items .looks__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.looks .looks__items .looks__item .looks__item__image {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+} /*# sourceMappingURL=looks.css.map */

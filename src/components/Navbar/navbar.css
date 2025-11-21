@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--bg-primary);
+  height: 4rem;
+}
+.navbar .navbar__logo {
+  height: 100%;
+}/*# sourceMappingURL=navbar.css.map */
