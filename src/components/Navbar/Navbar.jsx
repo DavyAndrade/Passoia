@@ -38,7 +38,9 @@ export default function Navbar() {
       {/* Navbar Container */}
       <div className="navbar__container">
         {/* Navbar Logo */}
-        <img src={logo} alt="Passoia Logo" className="navbar__logo" />
+        <a className="navbar__logo" href="#home">
+          <img src={logo} alt="Passoia Logo" className="navbar__logo__image" />
+        </a>
 
         {/* Mobile Menu Button */}
         <button className="navbar__menu-button" onClick={toggleMenu}>
@@ -68,7 +70,7 @@ export default function Navbar() {
 
 function NavItem({ label, href, closeMenu }) {
   return (
-    <a href={href} onClick={closeMenu}>
+    <a href={href} onClick={closeMenu} className="navbar__item">
       {label}
     </a>
   );

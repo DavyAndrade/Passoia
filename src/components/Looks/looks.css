@@ -1,9 +1,11 @@
 .looks {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding-inline: 1rem;
+  min-height: 100vh;
+  padding: 5rem 1rem;
   gap: 2rem;
 }
 .looks .looks__title {
