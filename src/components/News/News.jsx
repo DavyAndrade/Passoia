@@ -1,5 +1,5 @@
 import NewsImage from "../../assets/images/news/news.png";
-import "./news.css";
+import "./news.scss";
 
 export default function News() {
   return (

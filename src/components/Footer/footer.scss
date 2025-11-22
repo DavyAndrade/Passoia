@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  background-color: var(--bg-primary);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+  width: 100%;
+
+  /* Container */
+  .footer__container {
+    display: grid;
+    grid-template-areas:
+      "atendimento pagamento"
+      "rs rs";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+}

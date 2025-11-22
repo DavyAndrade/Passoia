@@ -3,7 +3,7 @@ import labios from "../../assets/images/looks/labios.png";
 import olhos from "../../assets/images/looks/olhos.png";
 import rosto from "../../assets/images/looks/rosto.png";
 import tendencia from "../../assets/images/looks/tendencia.png";
-import "./looks.css";
+import "./looks.scss";
 
 export default function Looks() {
   const looksItems = [

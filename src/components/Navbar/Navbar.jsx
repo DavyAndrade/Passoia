@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "../../assets/icons/passoia-logo.svg";
 import menu from "../../assets/icons/menu.svg";
 import close from "../../assets/icons/close.svg";
-import "./navbar.css";
+import "./navbar.scss";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

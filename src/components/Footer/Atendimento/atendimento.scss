@@ -1,0 +1,32 @@
+.atendimento {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+  grid-area: atendimento;
+
+  .atendimento__title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .atendimento__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .atendimento__list__item {
+      .atendimento__list__item__link {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--text-muted);
+
+        &:hover,
+        &:focus {
+          border-bottom: 2px solid var(--text-muted);
+        }
+      }
+    }
+  }
+}

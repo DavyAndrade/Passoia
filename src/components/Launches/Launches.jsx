@@ -1,10 +1,10 @@
 import { useState } from "react";
-import batomAzul from "../../assets/images/azul.png";
-import batomVermelho from "../../assets/images/vermelho.png";
-import batomMarrom from "../../assets/images/marrom.png";
-import batomBase from "../../assets/images/base.png";
+import batomAzul from "../../assets/images/lancamentos/azul.png";
+import batomVermelho from "../../assets/images/lancamentos/vermelho.png";
+import batomMarrom from "../../assets/images/lancamentos/marrom.png";
+import batomBase from "../../assets/images/lancamentos/base.png";
 import fiveStars from "../../assets/icons/five-stars.svg";
-import "./launches.css";
+import "./launches.scss";
 
 export default function Launches() {
   const launches = [
@@ -40,9 +40,7 @@ export default function Launches() {
 
       <div className="launches__container">
         <div className="launches__grid-1">
-          <div className="launches__batons">
-            
-          </div>
+          <div className="launches__batons"></div>
           <img src={batomAzul} alt="Batom Azul" className="launches__image" />
         </div>
 
@@ -79,9 +77,9 @@ export default function Launches() {
 
 function ColorItem({ color }) {
   return (
-    <div
+    <button
       className="launches__colors__item__color"
       style={{ backgroundColor: color }}
-    ></div>
+    ></button>
   );
 }

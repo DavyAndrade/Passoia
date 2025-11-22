@@ -1,5 +1,5 @@
 import HeroImage from "../../assets/images/hero/hero.png";
-import "./hero.css";
+import "./hero.scss";
 
 export default function Hero() {
   return (
