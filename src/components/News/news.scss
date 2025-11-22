@@ -3,7 +3,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   width: 100%;
   padding: 5rem 1rem;
   gap: 2rem;
@@ -26,6 +25,14 @@
 @media (min-width: 48rem) {
   .news {
     padding-inline: 1.5rem;
+  }
+}
+
+/* Desktops */
+@media (min-width: 64rem) {
+  .news {
+    min-height: 100vh;
+    padding-inline: 2rem;
     max-width: 64rem;
   }
 }
