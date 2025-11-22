@@ -1,5 +1,7 @@
 .footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--bg-primary);
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
   width: 100%;
@@ -15,5 +17,27 @@
     gap: 1.5rem;
     padding: 3rem 1rem;
     width: 100%;
+  }
+}
+
+/* Tablets */
+@media (min-width: 48rem) {
+  .footer {
+    .footer__container {
+      padding-inline: 1.5rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "atendimento pagamento rs";
+    }
+  }
+}
+
+/* Notebooks */
+@media (min-width: 64rem) {
+  .footer {
+    .footer__container {
+      max-width: 64rem;
+      padding: 4rem 2rem;
+    }
   }
 }
