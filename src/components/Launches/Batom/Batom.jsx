@@ -5,6 +5,9 @@ import batomVermelho from "../../../assets/images/lancamentos/vermelho.png";
 import batomMarrom from "../../../assets/images/lancamentos/marrom.png";
 import batomBase from "../../../assets/images/lancamentos/base.png";
 import fiveStars from "../../../assets/icons/five-stars.svg";
+import cosmeticos1 from "../../../assets/images/lancamentos/cosmeticos1.png";
+import cosmeticos2 from "../../../assets/images/lancamentos/cosmeticos2.png";
+import cosmeticos3 from "../../../assets/images/lancamentos/cosmeticos3.png";
 
 export default function Batom() {
   const [color, setColor] = useState(batomAzul);
@@ -39,7 +42,13 @@ export default function Batom() {
   return (
     <div className="batom">
       <div className="batom__images">
-        <img src={color} alt="Batom Azul" />
+        <div className="batom__images__container">
+          <img src={cosmeticos1} alt="Cosmeticos 1" className="batom__images__container__image" />
+          <img src={cosmeticos2} alt="Cosmeticos 2" className="batom__images__container__image" />
+          <img src={cosmeticos3} alt="Cosmeticos 3" className="batom__images__container__image" />
+        </div>
+
+        <img src={color} alt="Batom Azul" className="batom__images__image" />
       </div>
 
       <article className="batom__card">
@@ -51,7 +60,11 @@ export default function Batom() {
 
         <div className="batom__card__colors">
           {batons.map((baton) => (
-            <BatomItem baton={baton} toggleColor={toggleColor} />
+            <BatomItem
+              key={baton.name}
+              baton={baton}
+              toggleColor={toggleColor}
+            />
           ))}
         </div>
 

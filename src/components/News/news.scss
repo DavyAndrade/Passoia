@@ -27,18 +27,3 @@
     max-width: 48rem;
   }
 }
-
-/* Notebooks */
-@media (min-width: 64rem) {
-  .news {
-    padding-inline: 2rem;
-    max-width: 64rem;
-  }
-}
-
-/* Desktops */
-@media (min-width: 80rem) {
-  .news {
-    max-width: 80rem;
-  }
-}

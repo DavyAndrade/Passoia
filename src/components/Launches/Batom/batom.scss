@@ -1,26 +1,39 @@
 .batom {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   place-content: center;
   place-items: center;
   width: 100%;
-  gap: 1rem;
+  gap: 1.5rem;
 
   .batom__images {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
+    width: 100%;
+    height: 100%;
+
+    .batom__images__container {
+      display: none;
+    }
+
+    .batom__images__image {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+    }
   }
 
   .batom__card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
     width: 100%;
-    background-color: var(--bg-secondary);
+    height: 100%;
+    background-color: var(--bg-primary);
     padding: 1.5rem;
     border-radius: 0.75rem;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -55,8 +68,94 @@
     }
 
     .batom__card__description__text {
-      font-size: 1rem;
+      font-size: 0.75rem;
       font-weight: 400;
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 48rem) {
+  .batom {
+    grid-template-columns: 1fr 1fr;
+
+    .batom__images {
+      .batom__images__image {
+        width: 100%;
+      }
+    }
+
+    .batom__card {
+      align-items: start;
+    }
+  }
+}
+
+/* Notebooks */
+@media (min-width: 64rem) {
+  .batom {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    .batom__images {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr;
+      gap: 2rem;
+
+      .batom__images__image {
+        width: 100%;
+        height: 100%;
+      }
+
+      .batom__images__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: space-between;
+        width: 100%;
+        place-content: space-between;
+        justify-items: center;
+        align-items: center;
+        align-content: space-between;
+        gap: 1rem;
+
+        .batom__images__container__image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+/* Desktops */
+@media (min-width: 80rem) {
+  .batom {
+    grid-template-columns: 1fr 1fr;
+
+    .batom__card {
+      .batom__card__title {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      .batom__card__subtitle {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--text-muted);
+      }
+
+      .batom__card__description {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      .batom__card__description__text {
+        font-size: 1rem;
+        font-weight: 400;
+      }
     }
   }
 }
