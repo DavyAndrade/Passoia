@@ -1,8 +1,8 @@
 import React from "react";
-import labios from "../../assets/images/labios.png";
-import olhos from "../../assets/images/olhos.png";
-import rosto from "../../assets/images/rosto.png";
-import tendencia from "../../assets/images/tendencia.png";
+import labios from "../../assets/images/looks/labios.png";
+import olhos from "../../assets/images/looks/olhos.png";
+import rosto from "../../assets/images/looks/rosto.png";
+import tendencia from "../../assets/images/looks/tendencia.png";
 import "./looks.css";
 
 export default function Looks() {

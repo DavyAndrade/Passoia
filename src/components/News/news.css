@@ -1,9 +1,42 @@
 .news {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  padding-inline: 1rem;
+  padding: 5rem 1rem;
   gap: 2rem;
+}
+.news .news__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.news .news__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Tablets */
+@media (min-width: 48px) {
+  .news {
+    padding-inline: 1.5rem;
+    max-width: 48rem;
+  }
+}
+/* Notebooks */
+@media (min-width: 64rem) {
+  .news {
+    padding-inline: 2rem;
+    max-width: 64rem;
+  }
+}
+/* Desktops */
+@media (min-width: 80rem) {
+  .news {
+    padding-inline: 2rem;
+    max-width: 80rem;
+  }
 }/*# sourceMappingURL=news.css.map */
