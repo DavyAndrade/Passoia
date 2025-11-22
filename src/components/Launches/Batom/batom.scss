@@ -1,0 +1,62 @@
+.batom {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+  gap: 1rem;
+
+  .batom__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .batom__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+
+    .batom__card__colors {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .batom__card__colors__item {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+      }
+    }
+
+    .batom__card__title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .batom__card__subtitle {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .batom__card__description {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    .batom__card__description__text {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import NewsImage from "../../assets/images/news/news.png";
+import NewsImage from "../../assets/images/news/news.svg";
 import "./news.scss";
 
 export default function News() {

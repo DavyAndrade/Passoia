@@ -21,7 +21,7 @@
 }
 
 /* Tablets */
-@media (min-width: 48px) {
+@media (min-width: 48rem) {
   .news {
     padding-inline: 1.5rem;
     max-width: 48rem;
@@ -39,7 +39,6 @@
 /* Desktops */
 @media (min-width: 80rem) {
   .news {
-    padding-inline: 2rem;
     max-width: 80rem;
   }
 }
